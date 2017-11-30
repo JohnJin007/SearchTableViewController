@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "SearchTableViewController.h"
-
+#import "UIImage+Color.m"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.myTableView];
     
     _searchTableViewController = [[SearchTableViewController alloc]initWithStyle:UITableViewStylePlain];
@@ -31,7 +32,22 @@
         self.navigationItem.title = @"客户管理";
         self.navigationItem.searchController = _searchTableViewController.searchController;
     }else{
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        [self setStatusBarBackgroundColor:[UIColor whiteColor]];
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
+        self.navigationController.navigationBar.shadowImage = [UIImage new];
+        [self.navigationController.navigationBar setBackgroundColor:[UIColor whiteColor]];
+       
         self.navigationItem.titleView =  _searchTableViewController.searchController.searchBar;
+    }
+}
+
+//设置状态栏颜色
+- (void)setStatusBarBackgroundColor:(UIColor *)color {
+    
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
+        statusBar.backgroundColor = color;
     }
 }
 

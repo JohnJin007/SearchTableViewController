@@ -16,6 +16,7 @@
 		E9BAFBD61FCD2EBD00C720F3 /* TableViewAndSearchViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAFBD51FCD2EBD00C720F3 /* TableViewAndSearchViewDemoTests.m */; };
 		E9BAFBE11FCD2EBD00C720F3 /* TableViewAndSearchViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAFBE01FCD2EBD00C720F3 /* TableViewAndSearchViewDemoUITests.m */; };
 		E9BAFBF01FCD311800C720F3 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAFBEF1FCD311800C720F3 /* SearchTableViewController.m */; };
+		E9F6DF221FCFA4240056D60C /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F6DF201FCFA4240056D60C /* UIImage+Color.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		E9BAFBE21FCD2EBD00C720F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9BAFBEE1FCD311800C720F3 /* SearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
 		E9BAFBEF1FCD311800C720F3 /* SearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		E9F6DF201FCFA4240056D60C /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		E9F6DF211FCFA4240056D60C /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 		E9BAFBBB1FCD2EBD00C720F3 /* TableViewAndSearchViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9F6DF211FCFA4240056D60C /* UIImage+Color.h */,
+				E9F6DF201FCFA4240056D60C /* UIImage+Color.m */,
 				E9BAFBBC1FCD2EBD00C720F3 /* AppDelegate.h */,
 				E9BAFBBD1FCD2EBD00C720F3 /* AppDelegate.m */,
 				E9BAFBBF1FCD2EBD00C720F3 /* ViewController.h */,
@@ -272,6 +277,7 @@
 			files = (
 				E9BAFBC11FCD2EBD00C720F3 /* ViewController.m in Sources */,
 				E9BAFBCC1FCD2EBD00C720F3 /* main.m in Sources */,
+				E9F6DF221FCFA4240056D60C /* UIImage+Color.m in Sources */,
 				E9BAFBBE1FCD2EBD00C720F3 /* AppDelegate.m in Sources */,
 				E9BAFBF01FCD311800C720F3 /* SearchTableViewController.m in Sources */,
 			);
@@ -376,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -425,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -439,7 +445,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M3EM4YGUHH;
 				INFOPLIST_FILE = TableViewAndSearchViewDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingan.TableViewAndSearchViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,7 +462,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M3EM4YGUHH;
 				INFOPLIST_FILE = TableViewAndSearchViewDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingan.TableViewAndSearchViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

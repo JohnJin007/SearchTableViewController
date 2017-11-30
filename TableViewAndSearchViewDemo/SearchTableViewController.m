@@ -91,7 +91,7 @@
         }else{
             searchField = [((UIView *)[self.searchController.searchBar.subviews objectAtIndex:0]).subviews lastObject];
         }
-        searchField.backgroundColor = [UIColor lightGrayColor];
+        searchField.backgroundColor = [UIColor whiteColor];
         
         _searchController.searchBar.placeholder = @"输入姓名、车牌号";
         _searchController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
@@ -102,8 +102,8 @@
         _searchController.delegate = self;
         _searchController.dimsBackgroundDuringPresentation = NO;
         [_searchController.searchBar sizeToFit];
-        [_searchController.searchBar setTintColor:[UIColor lightGrayColor]];
-        _searchController.searchBar.backgroundColor = [UIColor whiteColor];
+        _searchController.searchBar.barTintColor = [UIColor clearColor];
+        _searchController.searchBar.backgroundColor = [UIColor clearColor];
         [_searchController.searchBar setValue:@"取消" forKey: @"_cancelButtonText"];
     }
     return _searchController;
